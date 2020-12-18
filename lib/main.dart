@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_web_playground/widgets/navigation_bar.dart';
 
 void main() {
   runApp(MyApp());
@@ -31,10 +32,12 @@ class _MyHomePageState extends State<MyHomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text(widget.title),
+      backgroundColor: Colors.white,
+      body: Column(
+        children: [
+          NavigationBar()
+        ],
       ),
-      body: Container(),
     );
   }
 }
